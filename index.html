@@ -24,6 +24,11 @@
             time.innerHTML=x
         }, 1000);
 
+        let now = new Date().toISOString();
+        const p = createElement("p");
+        p.innerHTML = now;
+        document.appendChild(p);
+
     </script>
 </body>
 </html>
