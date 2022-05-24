@@ -10,10 +10,20 @@
     <h1>On Console</h1>
     <script>
         let x = 0;
-        setTimeout(() => {
+
+        const timer = document.createElement("div");
+        const time = document.createElement("p");
+        time.innerHTML=x
+
+        timer.appendChild(time);
+        document.body.appendChild(timer);
+
+        setInterval(() => {
             console.log("Ok Computer", x); 
             x = x + 1;
-        }, 3000);
+            time.innerHTML=x
+        }, 1000);
+
     </script>
 </body>
 </html>
